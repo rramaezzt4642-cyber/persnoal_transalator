@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-icons.css" rel="stylesheet">
+  <!--This CSS adds a gradient background with  blue styling.  
+It enhances cards, inputs, and buttons with interactive hover and focus effects.-->
+  <style>
+    body{
+      background: linear-gradient(135deg,#E2F5FF,#cfe8ff);
+      font-family: Arial, sans-serif;
+    }
+    .card{
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover{
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+    h3{
+      color:#0077ff;
+      font-weight:bold;
+      letter-spacing:1px;
+    }
+    .form-control{
+      border-radius:5px;
+      border:1px solid #cfd9e3;
+      transition: border-color 0.3s, box-shadow 0.3s;
+    }
+    .form-control:focus{
+      border-color:#0077ff;
+      box-shadow:0 0 6px rgba(0,119,255,0.4);
+    }
+    .login-box button {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      background: #00b7ff;
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
+    }
+    .login-box button:hover{
+      background:#0077ff;
+      transform: scale(1.05);
+    }
+    .login-box button:active{
+      transform: scale(0.95);
+    }
+    .login-box:hover{
+      border: 1px solid #001aff;
+    }
+    .login-link{
+      color:#0077ff;
+      text-decoration:none;
+      transition: color 0.2s;
+    }
+    .login-link:hover{
+      color:#001aff;
+      text-decoration:underline;
+    }
+  </style>
+</head>
+<!-- creates a centered login card with email and password input fields.
+It includes a login button and a link for password recovery.-->
+<body>
+  <div class="container d-flex justify-content-center align-items-center vh-100">
+    <div class="card p-4 shadow" style="width: 100%; max-width: 400px;">
+      <h3 class="text-center mb-4"><i class="bi bi-person-circle"></i> Login</h3>
+      <form>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter email">
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" class="form-control" id="password" placeholder="Enter password">
+        </div>
+        <div class="login-box">
+          <button><i class="bi bi-box-arrow-in-right"></i> LOGIN</button>
+        </div>
+        <p class="text-center mt-3"><a href="forget_pass.html" class="login-link">Forgot password?</a></p>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

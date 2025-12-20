@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Forgot Password</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-icons.css" rel="stylesheet">
+  <!--The code styles a simple login page using CSS, adding a gradient background, and hover animation, plus interactive buttons and links.
+It also defines text styles, input fields, success/error messages, and a floating icon animation to make the design-->
+  <style>
+    body{
+      background: linear-gradient(135deg,#e9f4ff,#cfe8ff);
+      font-family: Arial, sans-serif;
+    }
+    .box{
+      width:350px;
+      background:#E2F5FF;
+      border:2px solid #E2F5FF;
+      margin:40px auto;
+      padding:30px 20px;
+      border-radius:8px;
+      position:relative;
+      box-shadow:0 6px 14px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .box:hover{
+      transform: translateY(-5px);
+    }
+    .back{
+      position:absolute;
+      top:10px;
+      left:10px;
+      font-size:20px;
+      color:#2C7BC9;
+      text-decoration:none;
+      transition: color 0.2s;
+    }
+    .back:hover{
+      color:#174a8c;
+    }
+    .key_icon{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      margin:auto;
+      margin-bottom:15px;
+      animation: float 3s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%{ transform: translateY(0); }
+      50%{ transform: translateY(-8px); }
+      100%{ transform: translateY(0); }
+    }
+    .title{
+      font-size:22px;
+      text-align:center;
+      margin-bottom:5px;
+      font-weight:bold;
+      color:#2C7BC9;
+    }
+    .desc{
+      text-align:center;
+      font-size:14px;
+      margin-bottom:20px;
+      color:#333;
+    }
+    .form-control{
+      border-radius:4px;
+      border:1px solid #cfd9e3;
+      transition: border-color 0.3s, box-shadow 0.3s;
+    }
+    .form-control:focus{
+      border-color:#2C7BC9;
+      box-shadow:0 0 6px rgba(44,123,201,0.4);
+    }
+    .send-btn{
+      width:220px;
+      height:42px;
+      background:#2C7BC9;
+      border:none;
+      color:#fff;
+      border-radius:4px;
+      margin:auto;
+      display:block;
+      margin-top:18px;
+      font-weight:600;
+      letter-spacing:0.5px;
+      transition: background 0.3s, transform 0.2s;
+    }
+    .send-btn:hover{
+      background:#174a8c;
+      transform: scale(1.05);
+    }
+    .send-btn:active{
+      transform: scale(0.95);
+    }
+    .login-link{
+      text-align:center;
+      margin-top:12px;
+      font-size:14px;
+      display:block;
+      color:#2C7BC9;
+      text-decoration:none;
+      transition: color 0.2s;
+    }
+    .login-link:hover{
+      color:#174a8c;
+      text-decoration:underline;
+    }
+    .message{
+      text-align:center;
+      font-size:13px;
+      margin-top:10px;
+      display:none;
+    }
+    .message.success{ color:green; }
+    .message.error{ color:red; }
+    .logo-link {
+      position: absolute;
+      top: 10px;
+      right:10px;
+    }
+    .logo-img {
+      width: 35px;
+      height: auto;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<!--This code creates a Forgot Password” form where users enter their email or phone number.  
+When the button is clicked, it shows an error if empty or a success message confirming the code will be sent.-->
+<body>
+
+  <div class="box">
+    <a href="#" class="back"><i class="bi bi-arrow-left"></i></a>
+
+    <div class="key_icon">
+      <img src="imge/صورة1.png" alt="key icon" style="width:150px;">
+    </div>
+
+    <div class="title">Forgot password?</div>
+
+    <div class="desc">
+      Enter your email or phone number and we'll send you a code to reset your password
+    </div>
+
+    <input type="text" id="infoInput" class="form-control" placeholder="Email or phone number">
+
+    <button id="sendBtn" class="send-btn"><i class="bi bi-send-fill"></i> Send code</button>
+
+    <div id="msgBox" class="message"></div>
+
+    <a href="login.html" class="login-link">Back to login</a>
+  </div>
+
+  <script>
+    var btn = document.getElementById("sendBtn");
+    var input = document.getElementById("infoInput");
+    var msgBox = document.getElementById("msgBox");
+
+    btn.onclick = function(){
+      var val = input.value.trim();
+
+      if(val === ""){
+        msgBox.textContent = "⚠️ Please enter your email or phone number.";
+        msgBox.className = "message error";
+        msgBox.style.display = "block";
+        input.focus();
+        return;
+      }
+
+      msgBox.textContent = "✅ A code would be sent to: " + val;
+      msgBox.className = "message success";
+      msgBox.style.display = "block";
+    };
+  </script>
+<div class="container-box">
+    <a href="index.html" class="logo-link">
+      <img src="imge/photo_2025-12-16_21-26-34.jpg" alt="Logo" class="logo-img">
+    </a>
+</body>
+</html>
