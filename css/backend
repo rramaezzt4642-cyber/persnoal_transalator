@@ -1,0 +1,5 @@
+mkdir backend
+echo "# مجلد الصور" > images/README.md
+git add images/
+git commit -m "إضافة مجلد images للصور"
+git push origin main
