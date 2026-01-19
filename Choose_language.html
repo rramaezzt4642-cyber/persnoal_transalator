@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>اختيار لغات الترجمة</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f9fbfd;
+            font-family: Tahoma, sans-serif;
+        }
+
+        .lang-box {
+            max-width: 500px;
+            margin: auto;
+        }
+
+        .lang-input {
+            height: 45px;
+            border-radius: 4px;
+        }
+
+        .translate-btn {
+            background-color: #3b0df0;
+            border: none;
+            height: 50px;
+            font-size: 18px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container py-5">
+
+    <div class="lang-box">
+
+        <h5 class="text-primary fw-bold text-center mb-4">
+            اختر لغات الترجمة
+        </h5>
+
+        <div class="mb-3">
+            <label class="form-label fw-bold">لغة المصدر:</label>
+            <select class="form-select lang-input">
+                <option selected disabled>اختر اللغة</option>
+                <option>العربية</option>
+                <option>English</option>
+                 <option>Turkish</option>
+                <option>Korean</option>
+            </select>
+        </div>
+
+        <div class="mb-4">
+            <label class="form-label fw-bold">اللغة المستهدفة:</label>
+            <select class="form-select lang-input">
+                <option selected disabled>اختر اللغة</option>
+                <option>العربية</option>
+                <option>English</option>
+                <option>Turkish</option>
+                <option>Korean</option>
+            </select>
+
+        </div>
+
+        <button class="btn btn-primary w-100 translate-btn">
+            ترجمة المستند
+        </button>
+
+    </div>
+</div>
+
+</body>
+</html>
