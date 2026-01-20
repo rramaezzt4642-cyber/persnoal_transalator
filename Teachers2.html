@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translator Profiles Portfolio</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap-icons.css" rel="stylesheet">
+    <!--This code contains a card with the translator's picture, basic information,
+     contact buttons, and a section to display details such as skills and experience.-->
+    <style>
+        body {
+            background-color: #f9fbfd;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 450px; 
+        }
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            position: relative;
+        }
+
+        
+        .header-section {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+
+        .profile-image-container {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            overflow: hidden;
+            background-color: #e2e8f0;
+            margin-right: 15px;
+            flex-shrink: 0;
+            border: 1px solid #edf2f7;
+        }
+
+        .profile-image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .info-text h2 {
+            margin: 0;
+            font-size: 1.25rem;
+            color: #3f51b5; 
+        }
+
+        .info-text p {
+            margin: 2px 0;
+            font-size: 0.85rem;
+            color: #64748b;
+        }
+
+        .status-online {
+            color: #22c55e !important;
+            font-weight: 600;
+        }
+        .contact-actions {
+            position: absolute;
+            top: 25px;
+            right: 25px;
+            display: flex;
+            gap: 8px;
+        }
+
+        .action-icon {
+            width: 35px;
+            height: 35px;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .action-icon:hover { transform: scale(1.1); }
+        .mail-btn { background-color: #1e3a8a; color: white; }
+        .wa-btn { background-color: #25d366; color: white; }
+
+    
+        .details-section h3 {
+            font-size: 0.95rem;
+            color: #334155;
+            margin: 15px 0 8px 0;
+            border-bottom: 1px solid #f1f5f9;
+            padding-bottom: 4px;
+        }
+
+        .details-section ul {
+            margin: 0;
+            padding-left: 18px;
+            list-style-type: disc;
+        }
+
+        .details-section li {
+            font-size: 0.85rem;
+            color: #475569;
+            line-height: 1.6;
+            margin-bottom: 4px;
+        }
+
+    </style>
+</head>
+<!--The code displays a collection of translator profile cards, 
+each containing a photo, basic information, a rating, a price, and contact status.
+It also adds two sections within each card: a brief introduction and the services offered.-->
+<body>
+
+    <div class="container">
+        
+        <div class="card">
+            <div class="contact-actions">
+                <div class="action-icon mail-btn">✉️</div>
+                <div class="action-icon wa-btn">💬</div>
+            </div>
+
+            <div class="header-section">
+                <div class="profile-image-container">
+                    <img src="imge/photo_2025-12-30_20-22-53.jpg" alt="Sarah Johnson">
+                </div>
+                <div class="info-text">
+                    <h2>Sarah Johnson</h2>
+                    <p>Arabic-English Translator</p>
+                    <p>(872 Reviews) 5.0</p>
+                    <p>$20 USD / hour</p>
+                    <p class="status-online">Online</p>
+                </div>
+            </div>
+
+            <div class="details-section">
+                <h3>About</h3>
+                <ul>
+                    <li>Professional Arabic to English translator.</li>
+                    <li>Native English speaker with strong Arabic skills.</li>
+                    <li>Accurate, natural, and high-quality translations.</li>
+                </ul>
+                <h3>Services</h3>
+                <ul>
+                    <li>Document Translation</li>
+                    <li>Academic Translation</li>
+                    <li>Business & Professional Content</li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+        
+        <div class="card">
+            <div class="contact-actions">
+                <div class="action-icon mail-btn">✉️</div>
+                <div class="action-icon wa-btn">💬</div>
+            </div>
+
+            <div class="header-section">
+                <div class="profile-image-container">
+                    <img src="imge/photo_2025-12-30_20-23-40.jpg" alt="Aylin Demir">
+                </div>
+                <div class="info-text">
+                    <h2>Aylin Demir</h2>
+                    <p>Turkish-English Translator</p>
+                    <p>(120 Reviews) 4.9</p>
+                    <p>$20 USD / hour</p>
+                    <p class="status-online">Online</p>
+                </div>
+            </div>
+
+            <div class="details-section">
+                <h3>About</h3>
+                <ul>
+                    <li>Arabic teacher with 10+ years of experience.</li>
+                    <li>Professional translator Arabic  English .</li>
+                    <li>passionate About helping student and clients.</li>
+                </ul>
+                <h3>Services</h3>
+                <ul>
+                    <li>Teaching Arabic Grammar & writing</li>
+                    <li>Academic Translation</li>
+                    <li>Business & Professional Content</li>
+                </ul>
+            </div>
+        </div>
+
+    <div class="container">
+        
+        <div class="card">
+            <div class="contact-actions">
+                <div class="action-icon mail-btn">✉️</div>
+                <div class="action-icon wa-btn">💬</div>
+            </div>
+
+            <div class="header-section">
+                <div class="profile-image-container">
+                    <img src="imge/photo_2025-12-30_20-23-19.jpg" alt="Min-Jea Kim">
+                </div>
+                <div class="info-text">
+                    <h2>Min-Jea Kim</h2>
+                    <p>Korean Language Teacher & Translator </p>
+                    <p>(100 Reviews) 5.0</p>
+                    <p>$20 USD / hour</p>
+                    <p class="status-online">Online</p>
+                </div>
+            </div>
+
+            <div class="details-section">
+                <h3>About</h3>
+                <ul>
+                    <li>Korean teacher with 10+ years of experience. </li>
+                    <li>Professional translator Korean  English .</li>
+                    <li>passionate about helping student and clients communicate clearly.</li>
+                </ul>
+                <h3>Services</h3>
+                <ul>
+                    <li>Teaching Korean Grammar & writing</li>
+                    <li>Korean English Translation</li>
+                    <li>conversational Korean</li>
+                    <li>Academic & genral Translation</li>
+                </ul>
+            </div>
+        </div><div class="container">
+        
+        <div class="card">
+            <div class="contact-actions">
+                <div class="action-icon mail-btn">✉️</div>
+                <div class="action-icon wa-btn">💬</div>
+            </div>
+
+            <div class="header-section">
+                <div class="profile-image-container">
+                    <img src="imge/photo_2025-12-30_20-23-25.jpg" alt="Israa Ahmed">
+                </div>
+                <div class="info-text">
+                    <h2>Israa Ahmad</h2>
+                    <p>Arabic Language teacher</p>
+                    <p>(100Reviews) 5.0</p>
+                    <p>$20 USD / hour</p>
+                    <p class="status-online">Online</p>
+                </div>
+            </div>
+
+            <div class="details-section">
+                <h3>About</h3>
+                <ul>
+                    <li>Arabic teacher with 10 + years of experience. </li>
+                    <li>Professional translator Arabic  English .</li>
+                    <li>passionate about helping student and clients communicate clearly.</li>
+                </ul>
+                <h3>Services</h3>
+                <ul>
+                    <li>Teaching Arabic Grammar & writing</li>
+                    <li>Arabic English Translation</li>
+                    <li>conversational Korean</li>
+                    <li>Academic & genral Translation</li>
+                </ul>
+            </div>
+        </div>
+        
+</body>
+</html>
